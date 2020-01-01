@@ -1,0 +1,40 @@
+:root {
+    --A : #F6F6F6;
+    --AB: #F6F6F6;
+    
+    --C : #323232;
+    --S : #323232;
+    --AH: #323232;
+    
+    --E : #FAD54A;
+    --I : #FAD54A;
+    --K : #FAD54A;
+    --O : #FAD54A;
+    --P : #FAD54A;
+    --U : #FAD54A;
+    --AD: #FAD54A;
+    
+    --F : #9B9B9B;
+    --V : #9B9B9B;
+    
+    --G : rgba(250, 213, 74, 1);
+    --H : rgba(250, 213, 74, 0.8);
+	--J : #000000;
+    
+    --L : #FFFFFF;
+    --M : #fff;
+    --N : #ffffff;
+    --T : #ffffff;
+    --Z : #fff;
+    
+    --Q : #fafaf0;
+    --R : #f6f6f6;
+    
+    --X : #787878;
+    --AC: #787878;
+    --AF: #787878;
+    
+    --B : #EBEBEB;
+    --D : #BEBEBE;
+    --AA: #fcfcfc;
+}

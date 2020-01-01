@@ -1,0 +1,666 @@
+/*!by Hashbrown777. feel free to modify and use, but only if you keep this attribution at the top of your copy*/
+
+/**, *:before, *:after {
+	box-sizing: border-box;
+}*/
+.initialize-tutorial {
+	display : none !important;
+}
+.fa-spinner:before {
+    content: '\f1d1' !important;
+}
+div.header {
+	width : 100%;
+	text-shadow : 1px 1px black;
+}
+
+
+.list-menu-float {
+	z-index : 20;
+}
+
+
+.list-container {
+	position : relative;
+}
+.list-container,
+.status-menu-container.fixed {
+	width : 90% !important;
+	max-width : 1400px;
+	z-index : 10;
+}
+.list-block,
+.cover-block,
+.status-menu-container,
+.status-menu,
+.list-unit,
+.list-status-title,
+.list-status-title .text,
+.list-stats,
+.image-container {
+	width : 100% !important;
+	position : relative;
+}
+div.cover-block .image-container {
+	display : block;
+	background-position : center;
+	border-top : none;
+}
+.list-block {
+	width : calc(100% - 20px) !important;
+	position : relative;
+	margin : auto;
+}
+.status-menu-container {
+	height : auto;
+	overflow : hidden
+}
+.status-menu-container .status-menu {
+	border-spacing : 10px 0;
+	margin : 0 10px;
+	height : 42px;
+}
+
+
+
+.status-menu-container .status-menu > .search-container {
+	display : table-cell;
+	position : relative;
+}
+.status-menu-container .status-menu > .status-button,
+.status-menu-container .status-menu > .search-container {
+	color : transparent !important;
+	width : calc(100% / 7);
+	margin : 0 !important;
+	padding : 0 !important;
+	text-align : center;
+}
+.status-menu-container .status-button:before,
+.status-menu-container .search-container i:before {
+	font-size : 1em !important;
+	color : var(--V) !important;
+	position : absolute;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	display : block;
+	line-height : 42px !important;
+}
+
+.status-menu-container .search-container .on {
+	z-index : 10;
+	position : absolute;
+	left : 5px;
+	right : 5px;
+	height : auto;
+}
+
+
+
+:root {
+	--listItemPadding : 10px;
+	--listItemPaddingNeg : calc(0px - var(--listItemPadding));
+}
+.list-table, .list-table tr {
+	display : block;
+	border : none;
+}
+.list-table > tbody,
+.list-table > tbody:first-child:after {
+	display : block;
+	position : relative;
+}
+.list-item,
+.list-table > tbody:first-child:after,
+.list-table:after {
+	border-top : var(--B) 2px solid;
+	border-left : var(--B) 1px solid;
+	border-top-left-radius : 10px;
+	border-bottom-color : transparent;
+	padding : var(--listItemPadding);
+	overflow : hidden;
+}
+.list-table-data {
+	position : relative;
+	z-index : 1;
+}
+.list-table .list-item td.data {
+	display : inline-block;
+	border : none;
+	padding : 0px;
+	margin : 5px 0;
+	text-align : left;
+}
+.list-table .list-item td.data.status {
+	margin : 0;
+	position : static;
+}
+
+@media (max-width: 1100px) {
+	.list-table .list-item td.data.score,
+	.list-table .list-item td.data.type,
+	.list-table .list-item td.data.progress,
+	.list-table .list-item td.data.tags,
+	.list-table .list-item td.data.season,
+	.list-table .list-item td.data.studio {
+		display : block !important;
+		width : 100% !important;
+		text-align : left !important;
+	}
+	.list-table .list-item td.data.started,
+	.list-table .list-item td.data.finished {
+		width : auto;
+	}
+	:root {
+		--thumbSize : var(--zoomThumb) !important;
+	}
+	.list-table .list-item {
+		max-height : 500px !important;
+	}
+	
+	.status-menu-container .status-button:before,
+	.status-menu-container .search-container a > i:before {
+		white-space : pre-line;
+	}
+
+	.header-title.status ~ th {
+		padding : 0 !important;
+	}
+	.header-title.status ~ th a {
+		height : 45px;
+		overflow : hidden;
+	}
+	.header-title.status ~ th a:before {
+		display : block;
+		line-height : 45px;
+	}
+}
+
+
+
+
+body:before { top : 0; }
+@media (min-width:1880px) {
+	.list-container { margin-top:70px; }
+	.header { position:fixed; top:0; }
+}
+
+
+
+
+
+.list-table .list-table-header {
+	background-color : var(--AB);
+	border-bottom: var(--B) 1px solid;
+}
+.list-table tr.list-table-header th.header-title {
+	display : inline-block;
+	width : calc(100% / 7) !important;
+	height : auto;
+	background : none;
+	border-bottom : none;
+	padding : 15px 0px;
+	position : relative;
+	text-align : center !important;
+}
+.list-table tr.list-table-header th.header-title.title {
+	padding-left : 0;
+}
+.list-table tr.list-table-header th.header-title.tags,
+.list-table tr.list-table-header th.studio,
+.list-table tr.list-table-header th.started ~ th.started {
+	display : none;
+}
+.list-table .list-table-header .header-title .sort-icon {
+	position : absolute;
+	bottom : -10px;
+	left : 0;
+	right : 0;
+	border-bottom : var(--E) 4px solid;
+	color : var(--AB) !important;
+	line-height : 0;
+}
+.list-table .list-table-header .header-title .sort-icon.fa-sort-asc:before {
+	position : relative;
+	top : 5px;
+}
+.header-title.status:after {
+	content : 'Sort';
+}
+
+
+
+
+:root {
+	--thumbSize : 70px;
+	--zoomThumb : 200px;
+	--zoomThumbNeg : calc(0px - var(--zoomThumb));
+	--tagSize : 0.5;
+}
+
+.list-table-data {
+	margin-right : var(--thumbSize);
+}
+
+.data.title ~ .data {
+	width : calc((100% - (100% - var(--thumbSize)) * var(--tagSize)) / 6);
+}
+.list-table .list-item td.data.tags {
+	width : calc((100% - var(--thumbSize)) * var(--tagSize) - 24px);
+	text-align : center;
+}
+.list-table .list-item td.data.tags ~ .data {
+	text-align : right;
+}
+.list-item .data.finished {
+	text-align : left !important;
+}
+.list-item .data > div, .list-table .list-item .list-table-data .data > a {
+	display : inline;
+}
+
+.list-table .list-table-data .data.status {
+	background-color : transparent !important;
+	width : auto;
+	padding : 0;
+}
+.list-table .list-item td.data.title {
+	padding-left : 0;
+	display : block;
+}
+
+/*necessary because some elements have whitespace in their
+generated text, others dont. This makes sure they all line up*/
+.data > :first-child:before {
+    content : ' ';
+}
+
+/*.status.watching ~ .started:before,*/
+.status.plantowatch ~ .started:before,
+.status.watching ~ .finished:before,
+.status.plantowatch ~ .finished:before {
+	visibility : hidden;
+}
+
+.list-item:not(:hover) .add-edit-more,
+.list-item:not(:hover) .edit {
+	display : none !important;
+}
+
+
+
+
+
+.list-table .list-table-data .data.status:hover {
+	width : 100px;
+}
+.data.status.watching:hover:after {
+	content : 'Watching';
+}
+.data.status.completed:hover:after {
+	content : 'Completed';
+}
+.data.status.onhold:hover:after {
+	content : 'On Hold';
+}
+.data.status.dropped:hover:after {
+	content : 'Dropped';
+}
+.data.status.plantowatch:hover:after {
+	content : 'Plan to Watch';
+}
+
+
+
+
+
+
+:root {
+	--thumbBlur : 3px;
+	--thumbBlurNeg : calc(0px - var(--thumbBlur));
+}
+
+.list-item tr.more-info {
+	border : none;
+	position : absolute;
+	display : block;
+	top : 0;
+	right : 0;
+	background-position : right;
+	background-repeat : no-repeat;
+	background-size : auto 100%;
+	width : var(--thumbSize);
+	height : calc(100% - var(--thumbBlur));
+	visibility : hidden;
+}
+.list-item tr.more-info:before,
+.list-item tr.more-info:after {
+	background : inherit;
+	position : absolute;
+	content : '\00a0';
+	visibility : visible;
+}
+.list-item tr.more-info:before {
+	filter : blur(var(--thumbBlur));
+	height : 100%;
+	width : 100%;
+}
+.list-item tr.more-info:after {
+	background-position : right var(--thumbBlurNeg) top var(--thumbBlurNeg);
+	top : var(--thumbBlur);
+	right : var(--thumbBlur);
+	bottom : var(--thumbBlur);
+	left : 0;
+	background-size : auto calc(100% + var(--thumbBlur));
+}
+
+
+@media (min-width: 1100px) {
+	.list-item:not(:hover) .data.tags {
+		float : left;
+		text-align : left;
+	}
+	.list-item:not(:hover) .data.tags:before {
+		display : none;
+	}
+	.list-item:not(:hover) .data.tags > div > span:first-child:before,
+	.list-item:not(:hover) .data.tags > div > span:last-child:after {
+		display : inline-block !important;
+	}
+	.list-item:hover .data.tags:before {
+		display : none;
+	}
+	.list-item:hover .data.tags {
+		position : absolute;
+		display : table !important;
+		width : calc(100% - 380px) !important;
+		right : 0;
+		height : calc(100% - 16px);
+		bottom : 0;
+		overflow : auto;
+	}
+	.list-item:hover .data.tags > div {
+		display : table-cell;
+		vertical-align : middle;
+		width : 100%;
+	}
+	.tags > div > span:before,
+	.tags > div > span:after {
+		color : var(--Y) !important;
+		color : var(--J) !important;
+		font-size : 0.5em !important;
+		vertical-align : super;
+	}
+	.tags > div > span:hover:before,
+	.tags > div > span:hover:after {
+		display : none !important;
+	}
+	.tags > div > span:first-child:before,
+	.list-item:hover .tags > div > span:before	{
+		content : '\f10d';
+	}
+	.tags > div > span + span:before {
+		margin-right : -6px !important;
+	}
+	.tags > div > span:last-child:after,
+	.list-item:hover .tags > div > span:after {
+		content : '\f10e';
+	}
+	
+	.list-item:not(:hover) .status.watching ~ .score:before,
+	.list-item:not(:hover) .status.plantowatch ~ .score:before {
+		visibility : hidden;
+	}
+	
+	.list-table .list-item:hover {
+		background-color: var(--AB) !important;
+		text-shadow: 1px 1px var(--AB) !important;
+		z-index : 1;
+		border-bottom : 1px solid var(--B);
+		right : 0;
+		left : 0;
+		border-right : var(--thumbSize) solid transparent;
+		border-image : linear-gradient(to right, var(--AB), rgba(0, 0, 0, 0)) 1 100%;;
+		background-clip : padding-box;
+	}
+	:root {
+		--table-size : 74px;
+		--detail-size : 184px;
+		--detail-animation-time : 0.1s;
+		--detail-animation-delay : 0.5s;
+		--detail-animation-accel : ease-in-out;
+		/*--detail-animation-accel : cubic-bezier(0.645, 0.045, 0.355, 1);*/
+	}
+	.list-table > tbody:first-child:after,
+	.list-table:after {
+		height : calc(var(--detail-size) - var(--table-size));
+		transition : height var(--detail-animation-time) var(--detail-animation-accel) var(--detail-animation-delay);
+	}
+	.list-table:hover > tbody:first-child:hover:after {
+		height : 182px;
+		transition : height var(--detail-animation-time) var(--detail-animation-accel) var(--detail-animation-delay);
+	}
+	.list-table:hover > tbody:first-child:after,
+	.list-table:hover:after {
+		height : 0;
+		transition : height var(--detail-animation-time) var(--detail-animation-accel) var(--detail-animation-delay);
+	}
+	.list-item > .list-table-data {
+		height : var(--table-size);
+		transition : height var(--detail-animation-time) var(--detail-animation-accel) var(--detail-animation-delay);
+	}
+	.list-item:hover > .list-table-data {
+		height : var(--detail-size);
+		transition : height var(--detail-animation-time) var(--detail-animation-accel) var(--detail-animation-delay);
+		margin-right : 0;
+		/*overflow : auto;*/
+	}
+	.list-item:hover .list-table-data {
+		padding-left : var(--zoomThumb) !important;
+	}
+	.list-item:last-of-type:hover {
+		position : relative;
+	}
+
+
+	.list-item:hover > tr.more-info {
+		left : 0;
+		right : auto;
+		width : var(--zoomThumb);
+	}
+	.list-table > .list-item:hover td.data:not(.status):not(.title):not(.started):not(.finished) {
+		display : block;
+		width : 100%;
+		text-align : left;
+	}
+	.list-item:hover .data:not(.finished):not(.status):before {
+		left : 0;
+		position : absolute;
+	}
+	.list-table .list-item:hover td.data.started,
+	.list-table .list-item:hover td.data.finished {
+		width : auto;
+		text-align : left;
+	}
+
+	.list-item:not(:hover) .studio,
+	.list-item:not(:hover) .season {
+		position : absolute;
+		right : -10px;
+		margin : 0 !important;
+		width : auto;
+	}
+	.list-item:not(:hover) .studio {
+		top : 0;
+		overflow : hidden;
+	}
+	.list-item:not(:hover) .season {
+		bottom : 0;
+	}
+	.list-item:not(:hover) .studio:before,
+	.list-item:not(:hover) .season:before {
+		float : right;
+		color : var(--J);
+		color : var(--AD);
+		padding-left : 5px;
+		margin-right : 0 !important;
+	}
+	.list-item:not(:hover) .studio:before {
+		position : absolute;
+		right : 0;
+	}
+	.list-item:not(:hover) .studio > span {
+		display : block;
+		color : transparent;
+		margin-right : 19px;
+	}
+	.list-item:not(:hover) .studio > span + span + span {
+		display : none;
+	}
+	.list-item:not(:hover) .studio a {
+		white-space : nowrap;
+	}
+}
+
+
+
+
+.content-status:before,
+.data.status ~ .data:before,
+.data.tags > div > span:before,
+.data.tags > div > span:after,
+.icon-watch:before,
+.status-button:before,
+.status-menu-container .status-button:before,
+.header-title .link:before {
+	display : inline-block;
+	font : normal normal normal 14px/1 FontAwesome, Arial;
+	margin-right : 3px;
+}
+
+.list-item .data.status:before {
+	content: '\a0';
+    position: absolute;
+    left: var(--listItemPaddingNeg);
+    top: var(--listItemPaddingNeg);
+    bottom: var(--listItemPaddingNeg);
+    width: 0px;
+    box-shadow: 0 0 var(--listItemPadding) 1px;
+}
+.data.status.watching,
+.data.status.watching + .title:before {
+	color : #2db039;
+}
+.data.status.completed,
+.data.status.completed + .title:before {
+	color : #26448f;
+}
+.data.status.plantowatch,
+.data.status.plantowatch + .title:before {
+	color : #c3c3c3;
+}
+.data.status.dropped,
+.data.status.dropped + .title:before {
+	color : #a12f31;
+}
+.data.status.onhold,
+.data.status.onhold + .title:before {
+	color : #f1c83e;
+}
+
+
+.data.status.watching + .title:before {
+	content : var(--watchingIcon);
+}
+.data.status.completed + .title:before {
+	content : var(--completedIcon);
+}
+.data.status.plantowatch + .title:before {
+	content : var(--planningIcon);
+}
+.data.status.dropped + .title:before {
+	content : var(--droppedIcon);
+}
+.data.status.onhold + .title:before {
+	content : var(--holdingIcon);
+}
+
+.header-title.title .link:before {
+	content : '\f03e ';
+}
+.data.score:before,
+.header-title.score .link:before {
+	content : '\f006 ';
+}
+.data.type:before,
+.header-title.type .link:before {
+	content : '\f26c ';
+}
+.data.progress:before,
+.header-title.progress .link:before {
+	content : '\f152 ';
+	content : '\f01d ';
+}
+.data.tags:before {
+	content : '\f075 ';
+	content : '\f0e5 ';
+}
+.data.started:not(:empty):before,
+.header-title.started .link:before {
+	content : '\f073 ';
+	content : '\f274 ';
+}
+.data.finished:not(:empty):before {
+	content : '| ';
+}
+.data.priority:before,
+.header-title.priority .link:before {
+	content : '\f253 ';
+}
+.data.studio:before {
+	content : '\f1ad ';
+	content : '\f1fc ';
+}
+.data.season:before {
+	content : '\f0ac ';
+}
+
+
+
+.content-status,
+.data.title a.icon-watch {
+	white-space : nowrap;
+	visibility : hidden;
+}
+.content-status:hover,
+.data.title a.icon-watch:hover {
+	max-width : 900px !important;
+	visibility : visible;
+}
+.content-status:before,
+.icon-watch:before {
+	visibility : visible;
+}
+
+
+.content-status {
+	display : inline-block;
+	color : red !important;
+}
+.content-status:before {
+	content : '\f071';
+}
+
+.list-table .list-item .list-table-data .data.title a.icon-watch {
+	background : none;
+	max-width : 16px;
+	text-indent : 0;
+	overflow : visible;
+	display : inline-block;
+	transition-property : max-width;
+	width : auto;
+}
+.icon-watch:before {
+	content: '\f008';
+}

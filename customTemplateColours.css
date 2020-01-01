@@ -1,0 +1,242 @@
+/*!by Hashbrown777. feel free to modify and use, but only if you keep this attribution at the top of your copy*/
+
+.cover-block .image-container {
+	background-color: var(--I);
+	padding-top: 0;
+	border-top: 16px solid var(--N);
+	background-image: url('http://cdn.myanimelist.net/s/common/uploaded_files/1455542413-6b19ce62d01ef05368166ff6db661484.png');
+	height: 280px;
+}
+
+#cover-image {
+	display : none;
+}
+
+#advanced-options {
+	background-color: var(--A);
+	border-color: var(--B);
+	color: var(--C);
+}
+#advanced-options .advanced-options-header {
+	border-bottom-color: var(--D);
+}
+
+#advanced-options .sort-widget input[type=radio]:checked + label {
+	background-color: var(--E);
+	border-color: var(--E);
+	color: var(--AH);
+}
+#advanced-options .sort-widget input[type=radio]:disabled + label {
+	color: var(--F);
+}
+#advanced-options .sort-widget input[type=radio]:checked:disabled + label {
+	color: var(--F);
+}
+
+#advanced-options .advanced-options-button {
+	border-top-color: var(--D);
+}
+
+#advanced-options .btn-apply,
+#advanced-options .btn-clear {
+	background-color: var(--G);
+}
+
+#advanced-options .btn-apply:hover,
+#advanced-options .btn-clear:hover {
+	background-color: var(--H);
+}
+
+body {
+	background-image: none !important;
+	color: var(--J) !important;
+	background-color: var(--R);
+}
+body:before {
+	display: block;
+	content: '\0a';
+	height: 178px;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+#footer-block {
+	background-color: var(--K);
+}
+
+#copyright {
+	color: var(--L);
+}
+
+.header a:hover {
+	color: var(--J);
+}
+
+.header {
+	color: var(--M);
+}
+
+.header .header-menu .list-menu {
+	background-color: var(--N);
+	border-color: var(--O);
+}
+
+.header .header-menu .list-menu .icon-menu {
+	color: var(--P);
+}
+
+.header .header-menu .list-menu .icon-menu:hover {
+	background-color: var(--Q)
+}
+
+.header .header-menu .list-menu .icon-menu svg.icon {
+	fill: var(--P);
+}
+
+.list-menu-float {
+	border-color: var(--B);
+}
+
+.list-menu-float .icon-menu {
+	background-color: var(--R) !important;
+}
+.list-menu-float .icon-menu svg.icon {
+	fill: var(--S);
+}
+.list-menu-float .icon-menu:hover svg.icon {
+	fill: var(--T);
+}
+.list-menu-float .icon-menu:not(.profile):hover {
+	background-color: var(--U);
+}
+
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting,
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+	background-color: var(--U);
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+	border-top-color: var(--B);
+}
+
+
+.list-container {
+	background-color: var(--N) !important;
+	border-color: var(--B);
+}
+
+
+.status-menu-container {
+	background-color: var(--N);
+	border-bottom-color: var(--B);
+}
+
+.status-menu-container .status-menu .status-button {
+	color: var(--V);
+}
+.status-menu-container .status-menu .status-button:hover {
+	color: var(--W);
+}
+.status-menu-container .status-menu .status-button.on {
+	color: var(--X);
+}
+
+.status-menu-container .status-menu .status-button:after {
+	background-color: var(--E);
+}
+
+
+.status-menu-container .search-container #search-button {
+	color: var(--X);
+}
+.status-menu-container .search-container #search-button:hover {
+	color: var(--W);
+}
+
+
+.list-unit .list-status-title {
+	background-color: var(--E);
+	border-left-color: var(--Y) !important;
+	border-right-color: var(--Y) !important;
+}
+
+.list-unit .list-status-title .text {
+	color: var(--Z);
+}
+
+
+.list-unit .list-status-title .stats a {
+	color: var(--Z);
+}
+
+.list-unit .list-stats {
+	background-color: var(--E);
+	color: var(--Z);
+}
+.list-table {
+	border-color: var(--B);
+}
+
+.list-table > tbody:nth-of-type(2n+1) {
+	background-color: var(--AA);
+}
+
+
+.list-table .list-table-header .header-title {
+	background-color: var(--AB);
+	border-bottom-color: var(--B);
+}
+
+
+
+.list-table .list-table-header .header-title .link {
+	color: var(--S);
+}
+
+.list-table .list-table-header .header-title .link.sort {
+	color: var(--S);
+}
+
+.list-table .list-table-header .header-title .link.sort:hover {
+	color: var(--AC);
+}
+
+.list-table .list-table-header .header-title .sort-icon {
+	color: var(--AD);
+}
+
+
+.list-table .list-table-data .data {
+	border-bottom-color: var(--B)
+}
+.list-table .list-table-data .data a {
+	color: var(--AD) !important;
+}
+
+.list-table .list-table-data a:not(.edit-disabled):hover {
+	color: var(--Y) !important;
+}
+
+.list-table .list-table-data a.edit-disabled {
+	color: var(--AF) !important;
+}
+
+.list-table .list-table-data .tags .edit {
+	color: #2db039 !important;
+}
+.list-table .list-table-data .data.image .image {
+	border-color: var(--B)
+}
+
+.list-table .more-info {
+	border-bottom-color: var(--B);
+}
+
+.list-table .more-info .more-content a {
+	color: var(--AE);
+}
+.list-table .more-info .more-content a:hover {
+	color: var(--W);
+}

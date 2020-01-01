@@ -1,0 +1,8 @@
+
+#cover-image-container:before {
+    color : white;
+    display : block;
+    content : "\09 This list is under review, I've rated a lot of things too highly, mostly because I was trying to rate everything objectively.\0a\09 Like if an anime was watchable, id est the creators made a competent animation capable of being watched, it automatically got a 5; because it didn't fundamentally fail.\0a\09 But that then leaves just a 5 point system to rate what I like, and I'm at odds as to whether to rate something that was animated well and has a good soundtrack et cetera above something that I thoroughly enjoyed.\0a\09 Maybe I was trying to hide behind this rationale so as not to offend people if I voted down something that 'should do better', or maybe I was trying to hide my tastes.\0a\09 I've since decided that the list should reflect what I enjoy, there's no point in trying to judge anime as good/bad.\0a\09 So try not to look at the scores too much until I have a think about the various scores and then go through and redo all of these rankings.";
+    padding : 50px;
+    white-space : pre-wrap;
+}

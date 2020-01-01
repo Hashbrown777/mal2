@@ -1,0 +1,337 @@
+/*!by Hashbrown777. feel free to modify and use, but only if you keep this attribution at the top of your copy*/
+
+@import "images.css";
+@import "https://mal-image.appspot.com/all/hashbrown777/?code=%23more-[ID]{background-image%3Aurl([URL])}";
+/*https://malscraper.azurewebsites.net/covers/anime/Hashbrown777*/
+@import "layout.css";
+@import "theme.css";
+@import "eggs.css";
+
+.header .username,
+.header .username:hover {
+	color: transparent;
+	text-shadow: none;
+	width : 144px;
+	display : inline-block;
+	position : relative;
+}
+.username:before {
+	content: 'ハッシュブラウンの';
+	color: #fff;
+	text-shadow: 1px 1px black;
+	position: absolute;
+	left : 0;
+}
+.username:hover:before {
+	color : var(--J);
+}
+
+:root {	
+	--commentTitle1 : "captivating";
+	--comment1 : "you'll be on the edge of your seat";
+
+	--commentTitle2 : "charming";
+	--comment2 : "be prepared to fall in love with the characters, they're adorable";
+
+	--commentTitle3 : "cool setting";
+	--comment3 : "there's an awesome premise, novel lore, or nifty properties to this universe";
+
+	--commentTitle4 : "epic";
+	--comment4 : "story/setting has a premise where a large area/population is affected";
+
+	--commentTitle5 : "episodic";
+	--comment5 : "not much in the way of overarching story here, that's fine though";
+
+	--commentTitle6 : "even if you dont watch the rest";
+	--comment6 : "this portion of the franchise is accessible stand-alone";
+
+	--commentTitle8 : "fantastic music";
+	--comment8 : "oh man, the score will really set the mood or even be good stand-alone!";
+
+	--commentTitle9 : "get out now";
+	--comment9 : "if you're not enjoying it, but think it'll get better, think again";
+
+	--commentTitle10 : "gets better";
+	--comment10 : "it'll start out crappy, but hang in there";
+
+	--commentTitle11 : "gets worse";
+	--comment11 : "just a warning, it can't be helped if you're watching it";
+
+	--commentTitle12 : "give it a go";
+	--comment12 : "I'll recommend it, because I enjoyed it, you're milage may vary";
+
+	--commentTitle13 : "good addition";
+	--comment13 : "if you're already watching some of the franchise, this is a good tie-in and should be watched";
+
+	--commentTitle14 : "got better";
+	--comment14 : "if you didn't enjoy the previous items in the franchise, try this";
+
+	--commentTitle15 : "got worse";
+	--comment15 : "unfortunately the franchise took a bit of a dive with this one";
+
+	--commentTitle16 : "great action";
+	--comment16 : "choreographicly smooth, graphically violent, fast-paced scenes or a combination are within";
+
+	--commentTitle17 : "highly recommended";
+	--comment17 : "I stake my reputation on you enjoying this!";
+
+	--commentTitle28 : "hilarious";
+	--comment28 : "extremely funny, usually using absurdist comedy";
+	
+	--commentTitle18 : "if youre into that";
+	--comment18 : "high score or recommendation is not accessible to those who don't enjoy this genre";
+
+	--commentTitle19 : "if you like the franchise";
+	--comment19 : "only a pre-existing audience will appreciate this one";
+	
+	--commentTitle29 : "lore";
+	--comment29 : "adds to the lore of a universe";
+
+	--commentTitle20 : "onion cutting";
+	--comment20 : "will leave you with a lump in your throat or a pit in your stomach";
+
+	--commentTitle21 : "overrated";
+	--comment21 : "not necessarily actually bad, 'just not as good as folks make it out to be; curb your expectation";
+
+	--commentTitle22 : "rollercoaster";
+	--comment22 : "buckle up for some feels";
+
+	--commentTitle23 : "relished style";
+	--comment23 : "man the art style in this is titting tasty";
+
+	--commentTitle24 : "short";
+	--comment24 : "can be good if you're not looking for commitment";
+
+	--commentTitle25 : "thoughtful";
+	--comment25 : "exposes you to concepts to churn those mind gears with";
+
+	--commentTitle26 : "tears you";
+	--comment26 : "this will tear you apart, Lisa. You'll be rooting for one of the people who..don't get what they deserve";
+
+	--commentTitle27 : "underrated";
+	--comment27 : "this is a little gem that's pretty unheard of, give it a chance";
+	
+	--commentTitle7 : "vivid animation";
+	--comment7 : "fluid motion, stunning effects or breath-taking scenes will be enjoyed here, feast for the eyes";
+}
+
+.image-container,
+.list-table tbody:first-child:after {
+	overflow : auto;
+}
+.image-container:after,
+.image-container:before,
+.list-table tbody:first-child:after,
+.list-table:after {
+    white-space : pre-wrap;
+	text-align : center;
+    display : block;
+}
+
+.image-container:after,
+.image-container:before {
+    color : white;
+	text-shadow: 1px 1px black;
+    margin : 0 auto;
+	margin-top : 35px;
+}
+
+.list-table tbody:first-child:after,
+.list-table:after {
+	text-shadow: 1px 1px var(--B);
+	font-style: italic;
+}
+
+.list-table:after {
+	content : "\0a\0ahttps://anime.stackexchange.com/users/23554/ハッシュブラウン";
+}
+	
+.list-table tbody:first-child:after {
+    content : "\
+\09The scores below reflect my experience with an anime.\0a\
+\09I don't attempt to gauge a production's worth objectively, I am not a critic.\0a\
+\09This is a personal page to advertise a personal opinion.\0a\
+\0a\
+10 \2014 perfect\0a\
+9 \2014 interesting and awesome\0a\
+8 \2014 awesome or interesting and great\0a\
+7 \2014 great or interesting and good\0a\
+6 \2014 good or interesting\0a\
+5 \2014 enjoyable\0a\
+4 \2014 didnt like but technically sound\0a\
+3 \2014 not good\0a\
+2 \2014 bad\0a\
+1 \2014 why was it even made\
+    ";
+}
+
+.image-container:before {
+    content : "\
+\000009A comment is written about a show if it has a trait I feel should really be told to you.\00000a\
+\000009This can be positive or negative, and should help you, but they do not affect the score I have given them (how much I enjoyed them).\00000a\
+\000009With most things I rate highly I even try to put in a cautionary comment, but if one has nothing but praise this could be your gateway anime into a new genre!\00000a";
+}
+
+.image-container:after {
+	width : 60%;
+	min-width : 500px;
+	text-align : left;
+    content : "\
+" "\2014" var(--commentTitle1) "\0a\09" var(--comment1) "\0a\
+" "\2014" var(--commentTitle2) "\0a\09" var(--comment2) "\0a\
+" "\2014" var(--commentTitle3) "\0a\09" var(--comment3) "\0a\
+" "\2014" var(--commentTitle4) "\0a\09" var(--comment4) "\0a\
+" "\2014" var(--commentTitle5) "\0a\09" var(--comment5) "\0a\
+" "\2014" var(--commentTitle6) "\0a\09" var(--comment6) "\0a\
+" "\2014" var(--commentTitle8) "\0a\09" var(--comment8) "\0a\
+" "\2014" var(--commentTitle9) "\0a\09" var(--comment9) "\0a\
+" "\2014" var(--commentTitle10) "\0a\09" var(--comment10) "\0a\
+" "\2014" var(--commentTitle11) "\0a\09" var(--comment11) "\0a\
+" "\2014" var(--commentTitle12) "\0a\09" var(--comment12) "\0a\
+" "\2014" var(--commentTitle13) "\0a\09" var(--comment13) "\0a\
+" "\2014" var(--commentTitle14) "\0a\09" var(--comment14) "\0a\
+" "\2014" var(--commentTitle15) "\0a\09" var(--comment15) "\0a\
+" "\2014" var(--commentTitle16) "\0a\09" var(--comment16) "\0a\
+" "\2014" var(--commentTitle17) "\0a\09" var(--comment17) "\0a\
+" "\2014" var(--commentTitle28) "\0a\09" var(--comment28) "\0a\
+" "\2014" var(--commentTitle18) "\0a\09" var(--comment18) "\0a\
+" "\2014" var(--commentTitle19) "\0a\09" var(--comment19) "\0a\
+" "\2014" var(--commentTitle29) "\0a\09" var(--comment29) "\0a\
+" "\2014" var(--commentTitle20) "\0a\09" var(--comment20) "\0a\
+" "\2014" var(--commentTitle21) "\0a\09" var(--comment21) "\0a\
+" "\2014" var(--commentTitle22) "\0a\09" var(--comment22) "\0a\
+" "\2014" var(--commentTitle23) "\0a\09" var(--comment23) "\0a\
+" "\2014" var(--commentTitle24) "\0a\09" var(--comment24) "\0a\
+" "\2014" var(--commentTitle25) "\0a\09" var(--comment25) "\0a\
+" "\2014" var(--commentTitle26) "\0a\09" var(--comment26) "\0a\
+" "\2014" var(--commentTitle27) "\0a\09" var(--comment27) "\0a\
+" "\2014" var(--commentTitle7) "\0a\09" var(--comment7) "\0a\
+\00000a\
+\00000a\
+\000009Lack of comments doesn't mean much, just kinda meh, not bad, nothing outstanding either; as always, the score should be your go-to\
+    ";
+}
+
+.data.tags:hover span {
+	display : block;
+	text-align : center;
+	color : transparent;
+	position : relative;
+}
+@media (min-width: 1100px) {
+	.list-item:hover .data.tags span {
+		display : block;
+		text-align : center;
+		color : transparent;
+		position : relative;
+	}
+}
+@media (max-width: 1100px) {
+	.data.tags:hover:before {
+		position : absolute;
+	}
+	.data.tags:hover > div:before {
+		display : none;
+	}
+	.data.tags span:hover a:before {
+		padding : 0 14px;
+	}
+}
+.data.tags span:hover {
+	margin-bottom : -16px;
+}
+.data.tags span:hover a {
+	color : transparent !important;
+}
+.data.tags span:hover a:before {
+	color : var(--Y) !important;
+	color : var(--J) !important;
+	white-space : pre;
+}
+
+.data.tags span:hover [href$="captivating"]:before									{ content : '\201c' var(--comment1) '\201d\0a'; }
+.data.tags span:hover [href$="charming"]:before										{ content : '\201c' var(--comment2) '\201d\0a'; }
+.data.tags span:hover [href$="cool%20setting"]:before								{ content : '\201c' var(--comment3) '\201d\0a'; }
+.data.tags span:hover [href$="epic"]:before											{ content : '\201c' var(--comment4) '\201d\0a'; }
+.data.tags span:hover [href$="episodic"]:before										{ content : '\201c' var(--comment5) '\201d\0a'; }
+.data.tags span:hover [href$="even%20if%20you%20dont%20watch%20the%20rest"]:before	{ content : '\201c' var(--comment6) '\201d\0a'; }
+.data.tags span:hover [href$="fantastic%20music"]:before							{ content : '\201c' var(--comment8) '\201d\0a'; }
+.data.tags span:hover [href$="get%20out%20now"]:before								{ content : '\201c' var(--comment9) '\201d\0a'; }
+.data.tags span:hover [href$="gets%20better"]:before								{ content : '\201c' var(--comment10) '\201d\0a'; }
+.data.tags span:hover [href$="gets%20worse"]:before									{ content : '\201c' var(--comment11) '\201d\0a'; }
+.data.tags span:hover [href$="give%20it%20a%20go"]:before							{ content : '\201c' var(--comment12) '\201d\0a'; }
+.data.tags span:hover [href$="good%20addition"]:before								{ content : '\201c' var(--comment13) '\201d\0a'; }
+.data.tags span:hover [href$="got%20better"]:before									{ content : '\201c' var(--comment14) '\201d\0a'; }
+.data.tags span:hover [href$="got%20worse"]:before									{ content : '\201c' var(--comment15) '\201d\0a'; }
+.data.tags span:hover [href$="great%20action"]:before								{ content : '\201c' var(--comment16) '\201d\0a'; }
+.data.tags span:hover [href$="highly%20recommended"]:before							{ content : '\201c' var(--comment17) '\201d\0a'; }
+.data.tags span:hover [href$="hilarious"]:before									{ content : '\201c' var(--comment28) '\201d\0a'; }
+.data.tags span:hover [href$="if%20youre%20into%20that"]:before						{ content : '\201c' var(--comment18) '\201d\0a'; }
+.data.tags span:hover [href$="if%20you%20like%20the%20franchise"]:before			{ content : '\201c' var(--comment19) '\201d\0a'; }
+.data.tags span:hover [href$="lore"]:before											{ content : '\201c' var(--comment29) '\201d\0a'; }
+.data.tags span:hover [href$="onion%20cutting"]:before								{ content : '\201c' var(--comment20) '\201d\0a'; }
+.data.tags span:hover [href$="overrated"]:before									{ content : '\201c' var(--comment21) '\201d\0a'; }
+.data.tags span:hover [href$="rollercoaster"]:before								{ content : '\201c' var(--comment22) '\201d\0a'; }
+.data.tags span:hover [href$="relished%20style"]:before								{ content : '\201c' var(--comment23) '\201d\0a'; }
+.data.tags span:hover [href$="short"]:before										{ content : '\201c' var(--comment24) '\201d\0a'; }
+.data.tags span:hover [href$="thoughtful"]:before									{ content : '\201c' var(--comment25) '\201d\0a'; }
+.data.tags span:hover [href$="tears%20you"]:before									{ content : '\201c' var(--comment26) '\201d\0a'; }
+.data.tags span:hover [href$="underrated"]:before									{ content : '\201c' var(--comment27) '\201d\0a'; }
+.data.tags span:hover [href$="vivid%20animation"]:before							{ content : '\201c' var(--comment7) '\201d\0a'; }
+
+
+
+:root {
+	--watchingIcon : '\f06e ';
+	--watchingIcon : '\f109 ';
+	--watching : ' Watching';
+	
+	--completedIcon : '\f00c ';
+	--completedIcon : '\f14a ';
+	--completedIcon : '\f046 ';
+	--completed : ' Seen';
+	
+	--planningIcon : '\f06e ';
+	--planningIcon : '\f017 ';
+	--planningIcon : '\f272 ';
+	--planning : ' To watch';
+	
+	--droppedIcon : '\f1f8 ';
+	--droppedIcon : '\f014 ';
+	--droppedIcon : '\f088 ';
+	--dropped : ' Dropped';
+	
+	--holdingIcon : '\f256 ';
+	--holdingIcon : '\f187 ';
+	--holding : ' Considering';
+}
+
+.status-menu-container .status-button.on:before,
+.status-menu-container .search-container i:before {
+	color : var(--X) !important;
+}
+.status-menu-container .status-button:hover:before {
+	color : var(--W);
+}
+
+.status-menu-container .search-container i:before {
+	content : '\f002\0aSearch';
+}
+.status-menu-container .status-button.all_anime:before {
+	content : '\f00b\0aWhole list';
+}
+.status-menu-container .status-button.watching:before {
+	content : var(--watchingIcon) '\0a' var(--watching);
+}
+.status-menu-container .status-button.completed:before {
+	content : var(--completedIcon) '\0a' var(--completed);
+}
+.status-menu-container .status-button.plantowatch:before {
+	content : var(--planningIcon) '\0a' var(--planning);
+}
+.status-menu-container .status-button.dropped:before {
+	content : var(--droppedIcon) '\0a' var(--dropped);
+}
+.status-menu-container .status-button.onhold:before {
+	content : var(--holdingIcon) '\0a' var(--holding);
+}

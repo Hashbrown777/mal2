@@ -1,0 +1,157 @@
+/*!by Hashbrown777. feel free to modify and use, but only if you keep this attribution at the top of your copy*/
+
+@import "customTemplateColours.css";
+
+/*@import "customDarkYellow.css";*/
+@import "DefaultTheme.css";
+/*@import "WhiteYellow.css";*/
+/*@import "DarkRed.css";*/
+
+
+/*this is unfortunately only working in Chrome
+and even then 'animating' background image and pseudo content is out-of-spec,
+so might not be supported much longer*/
+@media (-webkit-min-device-pixel-ratio: 0) {
+    div.cover-block:before {
+        animation : backgrounds 80s linear infinite;
+    }
+}
+
+
+
+/*unfortunately you cant animate css variables so I've limited the animated background to just the top image panel.
+otherwise I would like to change the theme (text and border colours) to match the changing background*/
+
+:root {
+	--transparentImage : url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+	
+	/*http://img00.deviantart.net/7852/i/2014/249/0/c/ryuko_matoi_senketsu__kill_la_kill__minimalism_by_greenmapple17-d7y8r94.png*/
+	--bgImage1 : url(https://hashbrown.000webhostapp.com/mal/2.0/ryuko_matoi_senketsu__kill_la_kill__minimalism_by_greenmapple17-d7y8r94.png);
+	--bgColour1 : #14191f;
+	--bgSide1 : left;
+	
+	/*http://cdn01.wallconvert.com/_media/wallpapers_1920x1080/1/4/mio-nagonahara-nichijou-33721.png*/
+	--bgImage2 : url(https://hashbrown.000webhostapp.com/mal/2.0/mio-nagonahara-nichijou-33721.png);
+	--bgColour2 : #4B5479;
+	--bgSide2 : left;
+	
+	/*http://img05.deviantart.net/6eea/i/2014/243/3/0/lelouch_lamperouge_code_geass_minimalist_wallpaper_by_greenmapple17-d7xhr44.png*/
+	--bgImage3 : url(https://hashbrown.000webhostapp.com/mal/2.0/lelouch_lamperouge_code_geass_minimalist_wallpaper_by_greenmapple17-d7xhr44.png);
+	--bgColour3 : #691A24;
+	--bgSide3 : right;
+	
+	/*http://orig02.deviantart.net/a098/f/2014/177/9/b/mewtwo_minimalist_wallpaper_by_artistwannab3-d7o38sq.jpg*/
+	--bgImage4 : url(https://hashbrown.000webhostapp.com/mal/2.0/mewtwo_minimalist_wallpaper_by_artistwannab3-d7o38sq.jpg);
+	--bgColour4 : #e3e0f1;
+	--bgSide4 : right;
+}
+
+div.cover-block:before {
+	top : 0;
+	height : 280px;
+	left : 0;
+	right : 0;
+	display : block;
+	content : '\a0';
+	position : absolute;
+
+    background-repeat : no-repeat;
+	background-size : auto 100%;
+	
+	background-color : var(--bgColour1);
+	background-position : var(--bgSide1) bottom;
+	/*pre-load*/
+	background-image : var(--bgImage1), var(--bgImage2), var(--bgImage3), var(--bgImage4);
+}
+div.cover-block .image-container {
+	background : none;
+}
+
+@keyframes backgrounds {
+100% {
+	background-image : var(--bgImage1);
+}
+	0% {
+		background-image : var(--bgImage1);
+	}
+	22% {
+		background-image : var(--bgImage1);
+	}
+	
+
+23% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour1);
+	background-position : var(--bgSide1) bottom;
+}
+24% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour2);
+	background-position : var(--bgSide2) bottom;
+}
+
+
+
+	25% {
+		background-image : var(--bgImage2);
+		background-color : var(--bgColour2);
+	}
+	47% {
+		background-image : var(--bgImage2);
+	}
+	
+	
+48% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour2);
+	background-position : var(--bgSide2) bottom;
+}
+49% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour3);
+	background-position : var(--bgSide3) bottom;
+}
+
+
+	50% {
+		background-image : var(--bgImage3);
+		background-color : var(--bgColour3);
+	}
+	72% {
+		background-image : var(--bgImage3);
+	}
+
+
+73% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour3);
+	background-position : var(--bgSide3) bottom;
+}
+74% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour4);
+	background-position : var(--bgSide4) bottom;
+}
+
+
+
+	75% {
+		background-image : var(--bgImage4);
+		background-color : var(--bgColour4);
+	}
+	97% {
+		background-image : var(--bgImage4);
+	}
+
+
+98% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour4);
+	background-position : var(--bgSide4) bottom;
+}
+99% {
+	background-image : var(--transparentImage);
+	background-color : var(--bgColour1);
+	background-position : var(--bgSide1) bottom;
+}
+}
