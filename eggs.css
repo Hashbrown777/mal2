@@ -75,19 +75,19 @@ body:before {
 
 
 :root {
-	--eggImage1 : url(https://hashbrown.000webhostapp.com/mal/2.0/hidamari_sketch_yuno_by_graphicsmith-d4bxvho.png);
+	--eggImage1 : url(hidamari_sketch_yuno_by_graphicsmith-d4bxvho.png);
 	--eggWidth1 : 150px;
 	--eggHeight1 : 159.2px;
 	
-	--eggImage2 : url(https://hashbrown.000webhostapp.com/mal/2.0/nichibro.png);
+	--eggImage2 : url(nichibro.png);
 	--eggWidth2 : 150px;
 	--eggHeight2 : 375px;
 	
-	--eggImage3 : url(https://hashbrown.000webhostapp.com/mal/2.0/killlakill2.png);
+	--eggImage3 : url(killlakill2.png);
 	--eggWidth3 : 150px;
 	--eggHeight3 : 190px;
 	
-	--eggImage4 : url(https://hashbrown.000webhostapp.com/mal/2.0/asuka2.png);
+	--eggImage4 : url(asuka2.png);
 	--eggWidth4 : 200px;
 	--eggHeight4 : 150px;
 	
